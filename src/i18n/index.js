@@ -14,7 +14,7 @@ import ko from './locales/ko.json'
 import th from './locales/th.json'
 import zhTW from './locales/zh-TW.json'
 
-const savedLocale = localStorage.getItem('longe-vity-locale') || 'en'
+const savedLocale = localStorage.getItem('longe-vity-locale') || 'zh'
 
 const messages = {
   zh,
@@ -28,7 +28,7 @@ const messages = {
 const i18n = createI18n({
   legacy: false,
   locale: savedLocale,
-  fallbackLocale: 'en',
+  fallbackLocale: 'zh',
   messages // 语言包
 })
 

@@ -14,11 +14,7 @@ import { useWalletStore } from '@/stores/wallet'
 const routes = [
   {
     path: '/',
-    component: () => import('@/views/SuperFundPage.vue')
-  },
-  {
-    path: '/AssetOverview',
-    component: () => import('@/views/AssetOverview.vue')
+    component: () => import('@/views/showPage.vue')
   }
 ]
 

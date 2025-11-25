@@ -24,7 +24,6 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import 'virtual:svg-icons-register'
 import 'virtual:uno.css'
 import {formatNumber} from '@/utils/index'
-import VSvg from '@/components/VSvg/index.vue'
 import Viewer from 'v-viewer';  
 import 'viewerjs/dist/viewer.css';
 
@@ -38,7 +37,6 @@ app.config.globalProperties.FROMATNUMBER = formatNumber;
 pinia.use(piniaPluginPersistedstate)
 app.use(pinia)
 
-app.component('VSvg', VSvg)
 
 app.use(router)
 app.use(ElementPlus)

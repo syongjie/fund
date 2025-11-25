@@ -13,9 +13,9 @@ export const modeContractAbi = [{"inputs":[],"name":"ReentrancyGuardReentrantCal
 
 
 export const web3 = new Web3(
-  Web3.givenProvider ||
-    new Web3.providers.HttpProvider('https://data-seed-prebsc-1-s2.binance.org:8545/'),
-)
+Web3.givenProvider ||
+new Web3.providers.HttpProvider('https://data-seed-prebsc-1-s2.binance.org:8545/')
+);
 
 export const ustdOBJ = new web3.eth.Contract(USDTabi, USDTAddress)
 
